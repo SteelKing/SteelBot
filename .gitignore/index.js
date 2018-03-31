@@ -7,3 +7,11 @@ bot.on("ready", function() {
 });
   
 bot.login(process.env.TOKEN);
+
+
+
+bot.on('message', function (message)) {
+    message.reply ("pong!")
+}
+   
+
