@@ -10,7 +10,7 @@ bot.on('message', function(message) {
 
 bot.on('guildMemberAdd', function (member) {
       member.createDM().then(function (channel) {
-            return channel.send('Bienvenu sur le channel ' + member.displayName)
+            return channel.send('Bienvenue sur le channel ' + member.displayName)
       }).catch(console.error)
 })
 
