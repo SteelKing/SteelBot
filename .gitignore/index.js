@@ -32,6 +32,12 @@ bot.on('message', function(message) {
       }
 })
 
+bot.on('message', function(message) {
+      if (message.content === 'pute') {
+         message.delete()
+      }
+})
+
 bot.on("ready", function() {
    console.log("LE bot a bien été connecter");
 });
