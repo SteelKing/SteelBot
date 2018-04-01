@@ -14,6 +14,24 @@ bot.on('guildMemberAdd', function (member) {
       }).catch(console.error)
 })
 
+bot.on('message', function(message) {
+      if (message.content === 'Bonjour') {
+         message.reply('Salut')
+      }
+})
+
+bot.on('message', function(message) {
+      if (message.content === 'Hello') {
+         message.reply('Salut')
+      }
+})
+
+bot.on('message', function(message) {
+      if (message.content === 'Yo') {
+         message.reply('Wesh Wesh Canapêche')
+      }
+})
+
 bot.on("ready", function() {
    console.log("LE bot a bien été connecter");
 });
