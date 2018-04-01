@@ -8,7 +8,7 @@ bot.on('message', function(message) {
       }
 })
 
-Bot.on('guildMenberAdd', function (member) {
+bot.on('guildMemberAdd', function (member) {
       member.createDM().then(function (channel) {
             return channel.send('Bienvenu sur le channel ' + member.displayName)
       }).catch(console.error)
